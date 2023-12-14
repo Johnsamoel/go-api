@@ -34,6 +34,7 @@ func main() {
     router := gin.Default()
 
     router.POST("/chats/create", CreateChatHandler)
+    router.POST("/messages/create", AddMessageHandler)
 
     port := 8080
     fmt.Printf("Server is running on port %d...\n", port)
